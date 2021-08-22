@@ -51,6 +51,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Start Over"/>
+                                <connections>
+                                    <action selector="startOver:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rYG-AW-cqD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XMT-57-8V5">
                                 <rect key="frame" x="603" y="324" width="44" height="31"/>
@@ -104,6 +107,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="roundLabel" destination="kwU-Ta-Q3g" id="F2A-R1-X7p"/>
+                        <outlet property="scoreLabel" destination="Wt5-iF-ttr" id="tg6-1Z-heJ"/>
                         <outlet property="slider" destination="UK7-oU-Reg" id="T2V-zZ-HOI"/>
                         <outlet property="targetLabel" destination="UUe-hI-i65" id="4bV-1Z-wX0"/>
                     </connections>
